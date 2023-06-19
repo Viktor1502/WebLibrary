@@ -28,18 +28,15 @@ function sendMessage() {
       behavior: "smooth"
     });
   }
+
+  /* Menu closed */
   
-  /* close hamburger options*/
-
-
-  function toggleMenu() {
-    var navbarCollapse = document.querySelector('.navbar-collapse');
-    navbarCollapse.classList.toggle('show');
-  }
-
   function closeMenu() {
-    var navbarCollapse = document.querySelector('.navbar-collapse');
-    navbarCollapse.classList.remove('show');
+    var menu = document.getElementById('navbarSupportedContent');
+    menu.classList.remove('show');
   }
+  
+  
+
 
   

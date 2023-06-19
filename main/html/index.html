@@ -25,18 +25,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Strona główna</a>
+          <button class="nav-link active ContactBt" data-bs-toggle="modal" data-bs-target="#contactModal" onclick="closeMenu()">Kontakt</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link active" data-bs-toggle="modal" data-bs-target="#contactModal" onclick="closeMenu()">Kontakt</button>
+          <a class="nav-link active Partners" aria-current="page" href="/main/html/checkuniveristy.html">Partnerzy</a>
         </li>
       </ul>
-      <button class="btn btn-outline-success" type="submit">Zaloguj</button>
+      <a class="btn btn-outline-success loginPage" href="/main/html/loginPanel.html">Zaloguj</a>
     </div>
   </div>
 </nav>
 
-  <!-- Popup z formularzem -->
+  <!-- Contact popup -->
   <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -68,39 +68,6 @@
       </div>
     </div>
   </div>
-  
-    <!-- Popup z formularzem -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="contactModalLabel">Formularz kontaktowy</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form id="contactForm">
-              <div class="mb-3">
-                <label for="name" class="form-label">Imię</label>
-                <input type="text" class="form-control" id="name">
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email">
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Wiadomość</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
-              </div>
-              <button type="button" class="btn btn-primary" onclick="sendMessage()">Wyślij</button>
-            </form>
-            <div id="successMessage" style="display: none;">Wiadomość została wysłana</div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
-          </div>
-        </div>
-      </div>
-    </div>
   
     <!-- Carousel -->
 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -156,7 +123,7 @@
             <li>Dłuższy okres możliwości wypożyczenia bez przedłużenia</li>
           </ol>
           <div class="text-center pt-5">
-            <a href="#" class="btn btn-primary btn-lg"
+            <a href="/main/html/checkuniveristy.html" class="btn btn-primary btn-lg"
               >Przejdź do sprawdzania uczelni</a
             >
           </div>
