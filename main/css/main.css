@@ -23,7 +23,6 @@
 
 .carousel-item {
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -214,4 +213,16 @@ footer {
   .login-container {
     margin-top: 0;
   }
+}
+
+
+/*books club styles */
+
+.clubPhoto{
+  height: 600px;
+}
+
+.descClub{
+padding-top: 4px;
+padding-bottom: 4px;
 }

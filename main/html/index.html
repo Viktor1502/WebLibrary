@@ -15,7 +15,7 @@
   <!-- NavBar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/main/html/index.html">
       <img src="/main/img/graduation-owl 32.png" alt="Logo sowy" class="mr-2" />
       eLibrary
     </a>
@@ -29,6 +29,12 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active Partners" aria-current="page" href="/main/html/checkuniveristy.html">Partnerzy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active Partners" aria-current="page" href="/main/html/booksclub.html">Klub książki</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active Partners" aria-current="page" href="/main/html/recomendBooks.html">Rekomendowane książki</a>
         </li>
       </ul>
       <a class="btn btn-outline-success loginPage" href="/main/html/loginPanel.html">Zaloguj</a>
@@ -70,38 +76,38 @@
   </div>
   
     <!-- Carousel -->
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-bs-interval="10000">
-      <img src="/main/img/Zostań jednym z nas wersja +.png" class="d-block w-100" alt="Książka">
-      <div class="carousel-caption d-none d-md-block">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-    </div>
-    <div class="carousel-item" data-bs-interval="2000">
-      <img src="/main/img/Zostań jednym z nas wersja +.png" class="d-block w-100" alt="Książka">
-      <div class="carousel-caption d-none d-md-block">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="/main/img/Zostań jednym z nas wersja +.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="/main/img/Zostań jednym z nas wersja +.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/main/img/Ucz się na błędach innych.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="carousel-item">
-      <img src="/main/img/Zostań jednym z nas wersja +.png" class="d-block w-100" alt="Książka">
-      <div class="carousel-caption d-none d-md-block">
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </a>
-</div>
 <!-- End of Carousel -->
 
 
@@ -112,7 +118,7 @@
           <h2 class="featurette-heading">
             Jesteś studentem? Sprawdź czy twoja uczelnia jest naszym Partnerem!
           </h2>
-          <p class="lead">Co daje Partnerstwo twojej uczelni?</p>
+          <h3 class="lead">Co daje Partnerstwo twojej uczelni?</h3>
           <ol>
             <li>Brak jakiejkolwiek kaucji za wypożyczone książki</li>
             <li>
@@ -150,7 +156,7 @@
             książki!
           </p>
           <div class="text-center pt-5">
-            <a href="#" class="btn btn-primary btn-lg"
+            <a href="/main/html/booksclub.html" class="btn btn-primary btn-lg"
               >Sprawdź co jeszcze oferuje nasz klub!</a
             >
           </div>
@@ -159,7 +165,7 @@
           <img
             src="../img/club.jpg"
             class="img-fluid img-thumbnail"
-            alt="Zjęcie ze spotkanie klubu książki"
+            alt="Zjęcie ze spotkania klubu książki"
           />
         </div>
       </div>
@@ -167,9 +173,11 @@
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">Twoja uczelnia nie jest jeszcze naszym Partnerem?</h2>
-          <p class="lead">
+          <h3 class="lead">
             Wypełnij formularz zgłoszeniowy a my odezwiemy się z ofertą!
-          </p>
+          </h3>
+          <p>Twoja uczelnia jeszcze nie jest naszym Partnerem? To idealny moment, aby nas o tym poinformować! Wypełnij formularz zgłoszeniowy, który pomoże nam nawiązać z nią kontakt.</p>
+            <p>Jako Partner eLibrary, Twoja uczelnia będzie miała dostęp do niezliczonych korzyści. Zapewniamy nie tylko wspaniałe możliwości literackie, ale także wyjątkowe eventy i przywileje dla studentów.</p>
           <div class="text-center pt-5">
             <a href="#" class="btn btn-primary btn-lg"
               >Przejdź do formularza</a
@@ -180,7 +188,7 @@
           <img
             src="/main/img/univeristy.jpg"
             class="img-fluid img-thumbnail"
-            alt="Nowe wydawnictwo"
+            alt="ciesząca się kobieta z książką"
           />
         </div>
       </div>
