@@ -35,9 +35,40 @@ function sendMessage() {
     var menu = document.getElementById('navbarSupportedContent');
     menu.classList.remove('show');
   }
+
+
+  window.addEventListener('DOMContentLoaded', function() {
+    var carouselItems = document.querySelectorAll('.carousel-item');
+    var isMobile = window.matchMedia('(max-width: 768px)');
   
+    function showAppropriateImage() {
+      for (var i = 0; i < carouselItems.length; i++) {
+        var carouselImages = carouselItems[i].querySelectorAll('.carousel-image');
+        for (var j = 0; j < carouselImages.length; j++) {
+          carouselImages[j].style.display = 'none';
+        }
+      }
   
+      if (isMobile.matches) {
+        carouselItems.forEach(function(item) {
+          var carouselImages = item.querySelectorAll('.carousel-image');
+          carouselImages[0].style.display = 'block';
+        });
+      } else {
+        carouselItems.forEach(function(item) {
+          var carouselImages = item.querySelectorAll('.carousel-image');
+          carouselImages[1].style.display = 'block';
+        });
+      }
+    }
   
+    showAppropriateImage();
+  
+    window.addEventListener('resize', function() {
+      isMobile = window.matchMedia('(max-width: 768px)');
+      showAppropriateImage();
+    });
+  });
 
 
   
